@@ -1,0 +1,732 @@
+-- Logs begin at 四 2018-02-01 08:23:37 CST, end at 五 2018-02-02 10:33:05 CST. --
+2月 01 08:23:45 ubuntu1604_k8s_node1 systemd[1]: Starting Etcd Server...
+2月 01 08:23:46 ubuntu1604_k8s_node1 etcd[1795]: etcd Version: 3.2.7
+2月 01 08:23:46 ubuntu1604_k8s_node1 etcd[1795]: Git SHA: bb66589
+2月 01 08:23:46 ubuntu1604_k8s_node1 etcd[1795]: Go Version: go1.8.3
+2月 01 08:23:46 ubuntu1604_k8s_node1 etcd[1795]: Go OS/Arch: linux/amd64
+2月 01 08:23:46 ubuntu1604_k8s_node1 etcd[1795]: setting maximum number of CPUs to 2, total number of available CPUs is 2
+2月 01 08:23:46 ubuntu1604_k8s_node1 etcd[1795]: the server is already initialized as member before, starting as etcd member...
+2月 01 08:23:46 ubuntu1604_k8s_node1 etcd[1795]: peerTLS: cert = /etc/etcd/ssl/etcd.pem, key = /etc/etcd/ssl/etcd-key.pem, ca = , trusted-ca = /etc/kubernetes/ssl/ca.pem, client-cert-auth = false
+2月 01 08:23:46 ubuntu1604_k8s_node1 etcd[1795]: listening for peers on https://192.168.139.51:2380
+2月 01 08:23:46 ubuntu1604_k8s_node1 etcd[1795]: The scheme of client url http://127.0.0.1:2379 is HTTP while peer key/cert files are presented. Ignored key/cert files.
+2月 01 08:23:46 ubuntu1604_k8s_node1 etcd[1795]: listening for client requests on 127.0.0.1:2379
+2月 01 08:23:46 ubuntu1604_k8s_node1 etcd[1795]: listening for client requests on 192.168.139.51:2379
+2月 01 08:23:46 ubuntu1604_k8s_node1 etcd[1795]: recovered store from snapshot at index 22000290
+2月 01 08:23:46 ubuntu1604_k8s_node1 etcd[1795]: restore compact to 10307628
+2月 01 08:23:46 ubuntu1604_k8s_node1 etcd[1795]: name = etcd-host1
+2月 01 08:23:46 ubuntu1604_k8s_node1 etcd[1795]: data dir = /var/lib/etcd
+2月 01 08:23:46 ubuntu1604_k8s_node1 etcd[1795]: member dir = /var/lib/etcd/member
+2月 01 08:23:46 ubuntu1604_k8s_node1 etcd[1795]: heartbeat = 100ms
+2月 01 08:23:46 ubuntu1604_k8s_node1 etcd[1795]: election = 1000ms
+2月 01 08:23:46 ubuntu1604_k8s_node1 etcd[1795]: snapshot count = 100000
+2月 01 08:23:46 ubuntu1604_k8s_node1 etcd[1795]: advertise client URLs = https://192.168.139.51:2379
+2月 01 08:23:49 ubuntu1604_k8s_node1 etcd[1795]: restarting member 5227f18ffa089aec in cluster f3e24243c7956124 at commit index 22099512
+2月 01 08:23:49 ubuntu1604_k8s_node1 etcd[1795]: 5227f18ffa089aec became follower at term 55513
+2月 01 08:23:49 ubuntu1604_k8s_node1 etcd[1795]: newRaft 5227f18ffa089aec [peers: [5227f18ffa089aec,6c66db9dc17b0eb5,e448a37828aa0925], term: 55513, commit: 22099512, applied: 22000290, lastindex: 22099513, lastterm: 55513]
+2月 01 08:23:49 ubuntu1604_k8s_node1 etcd[1795]: enabled capabilities for version 3.2
+2月 01 08:23:49 ubuntu1604_k8s_node1 etcd[1795]: added member 5227f18ffa089aec [https://192.168.139.51:2380] to cluster f3e24243c7956124 from store
+2月 01 08:23:49 ubuntu1604_k8s_node1 etcd[1795]: added member 6c66db9dc17b0eb5 [https://192.168.139.50:2380] to cluster f3e24243c7956124 from store
+2月 01 08:23:49 ubuntu1604_k8s_node1 etcd[1795]: added member e448a37828aa0925 [https://192.168.139.52:2380] to cluster f3e24243c7956124 from store
+2月 01 08:23:49 ubuntu1604_k8s_node1 etcd[1795]: set the cluster version to 3.2 from store
+2月 01 08:23:49 ubuntu1604_k8s_node1 etcd[1795]: restore compact to 10307628
+2月 01 08:23:50 ubuntu1604_k8s_node1 etcd[1795]: simple token is not cryptographically signed
+2月 01 08:23:50 ubuntu1604_k8s_node1 etcd[1795]: starting peer 6c66db9dc17b0eb5...
+2月 01 08:23:50 ubuntu1604_k8s_node1 etcd[1795]: started HTTP pipelining with peer 6c66db9dc17b0eb5
+2月 01 08:23:50 ubuntu1604_k8s_node1 etcd[1795]: started peer 6c66db9dc17b0eb5
+2月 01 08:23:50 ubuntu1604_k8s_node1 etcd[1795]: added peer 6c66db9dc17b0eb5
+2月 01 08:23:50 ubuntu1604_k8s_node1 etcd[1795]: starting peer e448a37828aa0925...
+2月 01 08:23:50 ubuntu1604_k8s_node1 etcd[1795]: started HTTP pipelining with peer e448a37828aa0925
+2月 01 08:23:50 ubuntu1604_k8s_node1 etcd[1795]: started peer e448a37828aa0925
+2月 01 08:23:50 ubuntu1604_k8s_node1 etcd[1795]: added peer e448a37828aa0925
+2月 01 08:23:50 ubuntu1604_k8s_node1 etcd[1795]: starting server... [version: 3.2.7, cluster version: 3.2]
+2月 01 08:23:50 ubuntu1604_k8s_node1 etcd[1795]: ClientTLS: cert = /etc/etcd/ssl/etcd.pem, key = /etc/etcd/ssl/etcd-key.pem, ca = , trusted-ca = /etc/kubernetes/ssl/ca.pem, client-cert-auth = false
+2月 01 08:23:50 ubuntu1604_k8s_node1 etcd[1795]: started streaming with peer 6c66db9dc17b0eb5 (writer)
+2月 01 08:23:50 ubuntu1604_k8s_node1 etcd[1795]: started streaming with peer 6c66db9dc17b0eb5 (writer)
+2月 01 08:23:50 ubuntu1604_k8s_node1 etcd[1795]: started streaming with peer 6c66db9dc17b0eb5 (stream MsgApp v2 reader)
+2月 01 08:23:50 ubuntu1604_k8s_node1 etcd[1795]: started streaming with peer 6c66db9dc17b0eb5 (stream Message reader)
+2月 01 08:23:50 ubuntu1604_k8s_node1 etcd[1795]: started streaming with peer e448a37828aa0925 (writer)
+2月 01 08:23:50 ubuntu1604_k8s_node1 etcd[1795]: started streaming with peer e448a37828aa0925 (writer)
+2月 01 08:23:50 ubuntu1604_k8s_node1 etcd[1795]: started streaming with peer e448a37828aa0925 (stream MsgApp v2 reader)
+2月 01 08:23:50 ubuntu1604_k8s_node1 etcd[1795]: started streaming with peer e448a37828aa0925 (stream Message reader)
+2月 01 08:23:50 ubuntu1604_k8s_node1 etcd[1795]: peer 6c66db9dc17b0eb5 became active
+2月 01 08:23:50 ubuntu1604_k8s_node1 etcd[1795]: established a TCP streaming connection with peer 6c66db9dc17b0eb5 (stream Message writer)
+2月 01 08:23:50 ubuntu1604_k8s_node1 etcd[1795]: established a TCP streaming connection with peer 6c66db9dc17b0eb5 (stream MsgApp v2 writer)
+2月 01 08:23:50 ubuntu1604_k8s_node1 etcd[1795]: 5227f18ffa089aec [term: 55513] received a MsgVote message with higher term from 6c66db9dc17b0eb5 [term: 55536]
+2月 01 08:23:50 ubuntu1604_k8s_node1 etcd[1795]: 5227f18ffa089aec became follower at term 55536
+2月 01 08:23:50 ubuntu1604_k8s_node1 etcd[1795]: 5227f18ffa089aec [logterm: 55513, index: 22099513, vote: 0] cast MsgVote for 6c66db9dc17b0eb5 [logterm: 55513, index: 22099513] at term 55536
+2月 01 08:23:50 ubuntu1604_k8s_node1 etcd[1795]: 5227f18ffa089aec [term: 55536] received a MsgVote message with higher term from 6c66db9dc17b0eb5 [term: 55537]
+2月 01 08:23:50 ubuntu1604_k8s_node1 etcd[1795]: 5227f18ffa089aec became follower at term 55537
+2月 01 08:23:50 ubuntu1604_k8s_node1 etcd[1795]: 5227f18ffa089aec [logterm: 55513, index: 22099513, vote: 0] cast MsgVote for 6c66db9dc17b0eb5 [logterm: 55513, index: 22099513] at term 55537
+2月 01 08:23:50 ubuntu1604_k8s_node1 etcd[1795]: 5227f18ffa089aec [term: 55537] received a MsgVote message with higher term from 6c66db9dc17b0eb5 [term: 55538]
+2月 01 08:23:50 ubuntu1604_k8s_node1 etcd[1795]: 5227f18ffa089aec became follower at term 55538
+2月 01 08:23:50 ubuntu1604_k8s_node1 etcd[1795]: 5227f18ffa089aec [logterm: 55513, index: 22099513, vote: 0] cast MsgVote for 6c66db9dc17b0eb5 [logterm: 55513, index: 22099513] at term 55538
+2月 01 08:23:50 ubuntu1604_k8s_node1 etcd[1795]: raft.node: 5227f18ffa089aec elected leader 6c66db9dc17b0eb5 at term 55538
+2月 01 08:23:50 ubuntu1604_k8s_node1 etcd[1795]: established a TCP streaming connection with peer 6c66db9dc17b0eb5 (stream MsgApp v2 reader)
+2月 01 08:23:50 ubuntu1604_k8s_node1 etcd[1795]: established a TCP streaming connection with peer 6c66db9dc17b0eb5 (stream Message reader)
+2月 01 08:23:50 ubuntu1604_k8s_node1 etcd[1795]: published {Name:etcd-host1 ClientURLs:[https://192.168.139.51:2379]} to cluster f3e24243c7956124
+2月 01 08:23:50 ubuntu1604_k8s_node1 systemd[1]: Started Etcd Server.
+2月 01 08:23:50 ubuntu1604_k8s_node1 etcd[1795]: ready to serve client requests
+2月 01 08:23:50 ubuntu1604_k8s_node1 etcd[1795]: serving insecure client requests on 127.0.0.1:2379, this is strongly discouraged!
+2月 01 08:23:50 ubuntu1604_k8s_node1 etcd[1795]: ready to serve client requests
+2月 01 08:23:50 ubuntu1604_k8s_node1 etcd[1795]: serving client requests on 192.168.139.51:2379
+2月 01 08:23:51 ubuntu1604_k8s_node1 etcd[1795]: peer e448a37828aa0925 became active
+2月 01 08:23:51 ubuntu1604_k8s_node1 etcd[1795]: established a TCP streaming connection with peer e448a37828aa0925 (stream MsgApp v2 reader)
+2月 01 08:23:51 ubuntu1604_k8s_node1 etcd[1795]: established a TCP streaming connection with peer e448a37828aa0925 (stream Message reader)
+2月 01 08:23:51 ubuntu1604_k8s_node1 etcd[1795]: established a TCP streaming connection with peer e448a37828aa0925 (stream MsgApp v2 writer)
+2月 01 08:23:52 ubuntu1604_k8s_node1 etcd[1795]: established a TCP streaming connection with peer e448a37828aa0925 (stream Message writer)
+2月 01 08:24:05 ubuntu1604_k8s_node1 etcd[1795]: apply entries took too long [246.544408ms for 2 entries]
+2月 01 08:24:05 ubuntu1604_k8s_node1 etcd[1795]: avoid queries with large range/delete range!
+2月 01 08:24:08 ubuntu1604_k8s_node1 etcd[1795]: start to snapshot (applied: 22100291, lastsnap: 22000290)
+2月 01 08:24:08 ubuntu1604_k8s_node1 etcd[1795]: saved snapshot at index 22100291
+2月 01 08:24:08 ubuntu1604_k8s_node1 etcd[1795]: compacted raft log at 22095291
+2月 01 08:24:20 ubuntu1604_k8s_node1 etcd[1795]: purged file /var/lib/etcd/member/snap/000000000000d5d1-0000000001499809.snap successfully
+2月 01 08:28:45 ubuntu1604_k8s_node1 etcd[1795]: apply entries took too long [101.500978ms for 1 entries]
+2月 01 08:28:45 ubuntu1604_k8s_node1 etcd[1795]: avoid queries with large range/delete range!
+2月 01 08:33:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10310196
+2月 01 08:33:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10310196 (took 4.732261ms)
+2月 01 08:38:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10310627
+2月 01 08:38:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10310627 (took 1.325119ms)
+2月 01 08:43:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10311062
+2月 01 08:43:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10311062 (took 2.037221ms)
+2月 01 08:48:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10311494
+2月 01 08:48:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10311494 (took 2.143352ms)
+2月 01 08:53:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10311919
+2月 01 08:53:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10311919 (took 1.353882ms)
+2月 01 08:58:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10312344
+2月 01 08:58:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10312344 (took 1.263802ms)
+2月 01 09:03:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10312767
+2月 01 09:03:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10312767 (took 1.414312ms)
+2月 01 09:08:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10313192
+2月 01 09:08:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10313192 (took 1.229381ms)
+2月 01 09:13:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10313615
+2月 01 09:13:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10313615 (took 1.284632ms)
+2月 01 09:18:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10314040
+2月 01 09:18:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10314040 (took 1.338719ms)
+2月 01 09:23:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10314463
+2月 01 09:23:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10314463 (took 1.246874ms)
+2月 01 09:28:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10314888
+2月 01 09:28:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10314888 (took 1.248069ms)
+2月 01 09:33:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10316075
+2月 01 09:33:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10316075 (took 3.819807ms)
+2月 01 09:38:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10316499
+2月 01 09:38:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10316499 (took 1.41254ms)
+2月 01 09:43:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10316922
+2月 01 09:43:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10316922 (took 1.265313ms)
+2月 01 09:48:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10317347
+2月 01 09:48:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10317347 (took 984.905µs)
+2月 01 09:53:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10317770
+2月 01 09:53:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10317770 (took 1.099363ms)
+2月 01 09:58:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10318195
+2月 01 09:58:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10318195 (took 1.005403ms)
+2月 01 10:03:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10318618
+2月 01 10:03:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10318618 (took 1.717933ms)
+2月 01 10:08:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10319043
+2月 01 10:08:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10319043 (took 1.022782ms)
+2月 01 10:13:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10319466
+2月 01 10:13:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10319466 (took 1.073385ms)
+2月 01 10:18:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10319891
+2月 01 10:18:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10319891 (took 1.167332ms)
+2月 01 10:23:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10320314
+2月 01 10:23:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10320314 (took 913.778µs)
+2月 01 10:28:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10320737
+2月 01 10:28:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10320737 (took 1.089175ms)
+2月 01 10:33:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10321162
+2月 01 10:33:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10321162 (took 1.011413ms)
+2月 01 10:38:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10321584
+2月 01 10:38:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10321584 (took 1.020006ms)
+2月 01 10:43:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10322009
+2月 01 10:43:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10322009 (took 1.571951ms)
+2月 01 10:48:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10322431
+2月 01 10:48:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10322431 (took 1.03151ms)
+2月 01 10:53:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10322856
+2月 01 10:53:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10322856 (took 1.181659ms)
+2月 01 10:58:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10323279
+2月 01 10:58:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10323279 (took 1.006694ms)
+2月 01 11:03:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10323704
+2月 01 11:03:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10323704 (took 1.025472ms)
+2月 01 11:04:47 ubuntu1604_k8s_node1 etcd[1795]: segmented wal file /var/lib/etcd/member/wal/00000000000000e9-000000000151c0d6.wal is created
+2月 01 11:04:50 ubuntu1604_k8s_node1 etcd[1795]: purged file /var/lib/etcd/member/wal/00000000000000e4-000000000146254b.wal successfully
+2月 01 11:08:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10324126
+2月 01 11:08:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10324126 (took 966.713µs)
+2月 01 11:13:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10324551
+2月 01 11:13:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10324551 (took 940.539µs)
+2月 01 11:18:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10324974
+2月 01 11:18:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10324974 (took 1.245569ms)
+2月 01 11:23:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10325399
+2月 01 11:23:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10325399 (took 1.214669ms)
+2月 01 11:28:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10325822
+2月 01 11:28:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10325822 (took 1.429773ms)
+2月 01 11:33:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10326247
+2月 01 11:33:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10326247 (took 1.100631ms)
+2月 01 11:38:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10326670
+2月 01 11:38:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10326670 (took 1.011526ms)
+2月 01 11:43:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10327095
+2月 01 11:43:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10327095 (took 952.103µs)
+2月 01 11:48:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10327522
+2月 01 11:48:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10327522 (took 1.240239ms)
+2月 01 11:53:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10328044
+2月 01 11:53:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10328044 (took 1.173518ms)
+2月 01 11:58:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10328689
+2月 01 11:58:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10328689 (took 1.469861ms)
+2月 01 12:03:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10329112
+2月 01 12:03:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10329112 (took 956.791µs)
+2月 01 12:08:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10329537
+2月 01 12:08:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10329537 (took 1.02924ms)
+2月 01 12:13:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10329960
+2月 01 12:13:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10329960 (took 1.783982ms)
+2月 01 12:18:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10330385
+2月 01 12:18:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10330385 (took 1.059459ms)
+2月 01 12:23:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10330808
+2月 01 12:23:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10330808 (took 1.200053ms)
+2月 01 12:28:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10331233
+2月 01 12:28:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10331233 (took 936.988µs)
+2月 01 12:33:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10331656
+2月 01 12:33:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10331656 (took 1.095257ms)
+2月 01 12:38:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10332081
+2月 01 12:38:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10332081 (took 2.006355ms)
+2月 01 12:43:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10332504
+2月 01 12:43:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10332504 (took 1.230271ms)
+2月 01 12:48:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10332929
+2月 01 12:48:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10332929 (took 1.068852ms)
+2月 01 12:53:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10333387
+2月 01 12:53:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10333387 (took 1.793523ms)
+2月 01 12:58:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10333909
+2月 01 12:58:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10333909 (took 1.625375ms)
+2月 01 13:03:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10334332
+2月 01 13:03:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10334332 (took 1.183918ms)
+2月 01 13:08:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10334757
+2月 01 13:08:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10334757 (took 1.075157ms)
+2月 01 13:13:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10335180
+2月 01 13:13:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10335180 (took 1.188011ms)
+2月 01 13:18:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10335605
+2月 01 13:18:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10335605 (took 1.05482ms)
+2月 01 13:23:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10336028
+2月 01 13:23:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10336028 (took 1.103548ms)
+2月 01 13:28:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10336452
+2月 01 13:28:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10336452 (took 1.045129ms)
+2月 01 13:33:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10336875
+2月 01 13:33:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10336875 (took 1.171814ms)
+2月 01 13:38:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10337299
+2月 01 13:38:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10337299 (took 1.15318ms)
+2月 01 13:43:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10337722
+2月 01 13:43:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10337722 (took 1.130621ms)
+2月 01 13:48:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10338147
+2月 01 13:48:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10338147 (took 1.165281ms)
+2月 01 13:53:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10338570
+2月 01 13:53:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10338570 (took 1.733001ms)
+2月 01 13:58:35 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10338994
+2月 01 13:58:35 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10338994 (took 1.087388ms)
+2月 01 14:03:36 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10339417
+2月 01 14:03:36 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10339417 (took 1.110224ms)
+2月 01 14:08:36 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10339842
+2月 01 14:08:36 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10339842 (took 1.023595ms)
+2月 01 14:13:36 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10340265
+2月 01 14:13:36 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10340265 (took 1.315252ms)
+2月 01 14:18:36 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10340688
+2月 01 14:18:36 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10340688 (took 1.43481ms)
+2月 01 14:23:36 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10341113
+2月 01 14:23:36 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10341113 (took 7.61502ms)
+2月 01 14:28:36 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10341536
+2月 01 14:28:36 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10341536 (took 1.010594ms)
+2月 01 14:33:36 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10341982
+2月 01 14:33:36 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10341982 (took 1.080594ms)
+2月 01 14:38:36 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10342415
+2月 01 14:38:36 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10342415 (took 1.295305ms)
+2月 01 14:43:36 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10342915
+2月 01 14:43:36 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10342915 (took 1.565229ms)
+2月 01 14:48:36 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10343408
+2月 01 14:48:36 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10343408 (took 1.313181ms)
+2月 01 14:53:36 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10343833
+2月 01 14:53:36 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10343833 (took 1.032438ms)
+2月 01 14:58:36 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10344256
+2月 01 14:58:36 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10344256 (took 2.048859ms)
+2月 01 15:03:36 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10344681
+2月 01 15:03:36 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10344681 (took 1.298608ms)
+2月 01 15:08:36 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10345104
+2月 01 15:08:36 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10345104 (took 1.007513ms)
+2月 01 15:13:36 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10345528
+2月 01 15:13:36 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10345528 (took 1.241616ms)
+2月 01 15:18:36 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10345951
+2月 01 15:18:36 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10345951 (took 1.11653ms)
+2月 01 15:42:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10347216
+2月 01 15:42:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10347216 (took 11.297001ms)
+2月 01 15:47:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10347661
+2月 01 15:47:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10347661 (took 1.148997ms)
+2月 01 15:52:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10348084
+2月 01 15:52:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10348084 (took 1.108844ms)
+2月 01 15:57:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10348507
+2月 01 15:57:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10348507 (took 1.03633ms)
+2月 01 16:02:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10348932
+2月 01 16:02:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10348932 (took 1.005145ms)
+2月 01 16:07:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10349355
+2月 01 16:07:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10349355 (took 1.026806ms)
+2月 01 16:12:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10349780
+2月 01 16:12:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10349780 (took 1.73242ms)
+2月 01 16:17:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10350203
+2月 01 16:17:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10350203 (took 1.162728ms)
+2月 01 16:19:09 ubuntu1604_k8s_node1 etcd[1795]: start to snapshot (applied: 22200292, lastsnap: 22100291)
+2月 01 16:19:09 ubuntu1604_k8s_node1 etcd[1795]: saved snapshot at index 22200292
+2月 01 16:19:09 ubuntu1604_k8s_node1 etcd[1795]: compacted raft log at 22195292
+2月 01 16:19:20 ubuntu1604_k8s_node1 etcd[1795]: purged file /var/lib/etcd/member/snap/000000000000d5e4-00000000014b1ead.snap successfully
+2月 01 16:22:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10350626
+2月 01 16:22:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10350626 (took 1.159214ms)
+2月 01 16:27:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10351051
+2月 01 16:27:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10351051 (took 1.103287ms)
+2月 01 16:32:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10351474
+2月 01 16:32:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10351474 (took 1.269545ms)
+2月 01 16:36:08 ubuntu1604_k8s_node1 etcd[1795]: apply entries took too long [328.525132ms for 1 entries]
+2月 01 16:36:08 ubuntu1604_k8s_node1 etcd[1795]: avoid queries with large range/delete range!
+2月 01 16:36:09 ubuntu1604_k8s_node1 etcd[1795]: apply entries took too long [171.914205ms for 1 entries]
+2月 01 16:36:09 ubuntu1604_k8s_node1 etcd[1795]: avoid queries with large range/delete range!
+2月 01 16:36:14 ubuntu1604_k8s_node1 etcd[1795]: apply entries took too long [312.487176ms for 2 entries]
+2月 01 16:36:14 ubuntu1604_k8s_node1 etcd[1795]: avoid queries with large range/delete range!
+2月 01 16:37:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10351898
+2月 01 16:37:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10351898 (took 34.616746ms)
+2月 01 16:42:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10352325
+2月 01 16:42:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10352325 (took 15.251571ms)
+2月 01 16:47:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10352750
+2月 01 16:47:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10352750 (took 1.34093ms)
+2月 01 16:52:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10353173
+2月 01 16:52:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10353173 (took 1.294421ms)
+2月 01 16:57:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10353596
+2月 01 16:57:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10353596 (took 1.429575ms)
+2月 01 17:02:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10354021
+2月 01 17:02:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10354021 (took 1.271811ms)
+2月 01 17:07:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10354460
+2月 01 17:07:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10354460 (took 1.100727ms)
+2月 01 17:12:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10354884
+2月 01 17:12:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10354884 (took 1.093153ms)
+2月 01 17:17:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10355311
+2月 01 17:17:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10355311 (took 984.008µs)
+2月 01 17:22:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10355803
+2月 01 17:22:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10355803 (took 1.050003ms)
+2月 01 17:27:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10356342
+2月 01 17:27:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10356342 (took 1.136372ms)
+2月 01 17:32:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10356770
+2月 01 17:32:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10356770 (took 1.358448ms)
+2月 01 17:37:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10357195
+2月 01 17:37:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10357195 (took 1.029005ms)
+2月 01 17:42:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10357650
+2月 01 17:42:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10357650 (took 991.011µs)
+2月 01 17:47:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10358073
+2月 01 17:47:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10358073 (took 976.947µs)
+2月 01 17:52:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10358498
+2月 01 17:52:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10358498 (took 964.377µs)
+2月 01 17:57:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10358989
+2月 01 17:57:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10358989 (took 1.204158ms)
+2月 01 18:02:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10359448
+2月 01 18:02:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10359448 (took 1.466146ms)
+2月 01 18:03:06 ubuntu1604_k8s_node1 etcd[1795]: segmented wal file /var/lib/etcd/member/wal/00000000000000ea-00000000015315f5.wal is created
+2月 01 18:03:20 ubuntu1604_k8s_node1 etcd[1795]: purged file /var/lib/etcd/member/wal/00000000000000e5-0000000001477644.wal successfully
+2月 01 18:07:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10359916
+2月 01 18:07:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10359916 (took 1.056047ms)
+2月 01 18:12:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10360356
+2月 01 18:12:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10360356 (took 980.962µs)
+2月 01 18:17:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10360781
+2月 01 18:17:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10360781 (took 1.152058ms)
+2月 01 18:22:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10361216
+2月 01 18:22:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10361216 (took 1.324131ms)
+2月 01 18:27:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10361663
+2月 01 18:27:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10361663 (took 1.040575ms)
+2月 01 18:32:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10362088
+2月 01 18:32:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10362088 (took 1.677184ms)
+2月 01 18:37:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10362511
+2月 01 18:37:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10362511 (took 1.2105ms)
+2月 01 18:42:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10362946
+2月 01 18:42:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10362946 (took 1.779338ms)
+2月 01 18:47:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10363369
+2月 01 18:47:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10363369 (took 1.020402ms)
+2月 01 18:52:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10363792
+2月 01 18:52:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10363792 (took 1.012133ms)
+2月 01 18:57:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10364226
+2月 01 18:57:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10364226 (took 1.304571ms)
+2月 01 19:02:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10364662
+2月 01 19:02:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10364662 (took 1.066842ms)
+2月 01 19:07:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10365099
+2月 01 19:07:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10365099 (took 996.045µs)
+2月 01 19:12:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10365524
+2月 01 19:12:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10365524 (took 1.168755ms)
+2月 01 19:17:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10365947
+2月 01 19:17:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10365947 (took 1.061855ms)
+2月 01 19:22:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10366372
+2月 01 19:22:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10366372 (took 1.276203ms)
+2月 01 19:27:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10366795
+2月 01 19:27:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10366795 (took 941.716µs)
+2月 01 19:32:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10367219
+2月 01 19:32:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10367219 (took 1.614785ms)
+2月 01 19:37:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10367642
+2月 01 19:37:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10367642 (took 1.923972ms)
+2月 01 19:42:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10368065
+2月 01 19:42:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10368065 (took 1.073606ms)
+2月 01 19:47:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10368522
+2月 01 19:47:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10368522 (took 1.344782ms)
+2月 01 19:52:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10369001
+2月 01 19:52:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10369001 (took 2.742365ms)
+2月 01 19:57:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10369449
+2月 01 19:57:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10369449 (took 1.34813ms)
+2月 01 20:02:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10369872
+2月 01 20:02:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10369872 (took 1.021861ms)
+2月 01 20:07:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10370297
+2月 01 20:07:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10370297 (took 1.348457ms)
+2月 01 20:12:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10370720
+2月 01 20:12:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10370720 (took 975.732µs)
+2月 01 20:17:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10371143
+2月 01 20:17:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10371143 (took 967.161µs)
+2月 01 20:22:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10371568
+2月 01 20:22:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10371568 (took 1.039442ms)
+2月 01 20:27:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10371991
+2月 01 20:27:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10371991 (took 1.178214ms)
+2月 01 20:32:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10372416
+2月 01 20:32:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10372416 (took 1.023956ms)
+2月 01 20:37:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10372839
+2月 01 20:37:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10372839 (took 1.117571ms)
+2月 01 20:42:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10373261
+2月 01 20:42:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10373261 (took 8.64988ms)
+2月 01 20:47:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10373731
+2月 01 20:47:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10373731 (took 1.818654ms)
+2月 01 20:52:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10374172
+2月 01 20:52:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10374172 (took 1.162284ms)
+2月 01 20:57:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10374600
+2月 01 20:57:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10374600 (took 1.043414ms)
+2月 01 21:02:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10375025
+2月 01 21:02:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10375025 (took 1.483056ms)
+2月 01 21:07:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10375452
+2月 01 21:07:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10375452 (took 1.779783ms)
+2月 01 21:12:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10375916
+2月 01 21:12:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10375916 (took 1.377529ms)
+2月 01 21:17:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10376339
+2月 01 21:17:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10376339 (took 1.085426ms)
+2月 01 21:22:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10376793
+2月 01 21:22:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10376793 (took 1.07361ms)
+2月 01 21:27:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10377286
+2月 01 21:27:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10377286 (took 1.606458ms)
+2月 01 21:32:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10377709
+2月 01 21:32:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10377709 (took 1.293894ms)
+2月 01 21:37:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10378134
+2月 01 21:37:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10378134 (took 1.367046ms)
+2月 01 21:42:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10378557
+2月 01 21:42:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10378557 (took 1.762255ms)
+2月 01 21:47:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10378992
+2月 01 21:47:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10378992 (took 1.142666ms)
+2月 01 21:52:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10379417
+2月 01 21:52:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10379417 (took 1.120385ms)
+2月 01 21:57:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10379918
+2月 01 21:57:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10379918 (took 1.66342ms)
+2月 01 22:02:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10380343
+2月 01 22:02:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10380343 (took 1.109302ms)
+2月 01 22:07:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10380766
+2月 01 22:07:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10380766 (took 1.31902ms)
+2月 01 22:12:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10381189
+2月 01 22:12:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10381189 (took 962.421µs)
+2月 01 22:17:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10381614
+2月 01 22:17:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10381614 (took 1.548432ms)
+2月 01 22:22:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10382036
+2月 01 22:22:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10382036 (took 1.11725ms)
+2月 01 22:27:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10382459
+2月 01 22:27:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10382459 (took 941.039µs)
+2月 01 22:32:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10382884
+2月 01 22:32:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10382884 (took 1.100646ms)
+2月 01 22:37:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10383307
+2月 01 22:37:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10383307 (took 1.154152ms)
+2月 01 22:42:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10383730
+2月 01 22:42:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10383730 (took 1.291533ms)
+2月 01 22:47:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10384155
+2月 01 22:47:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10384155 (took 1.122157ms)
+2月 01 22:52:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10384577
+2月 01 22:52:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10384577 (took 1.085365ms)
+2月 01 22:57:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10385025
+2月 01 22:57:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10385025 (took 1.267471ms)
+2月 01 23:02:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10385448
+2月 01 23:02:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10385448 (took 1.002622ms)
+2月 01 23:07:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10385871
+2月 01 23:07:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10385871 (took 2.380114ms)
+2月 01 23:12:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10386295
+2月 01 23:12:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10386295 (took 1.150865ms)
+2月 01 23:17:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10386718
+2月 01 23:17:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10386718 (took 1.061557ms)
+2月 01 23:22:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10387141
+2月 01 23:22:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10387141 (took 1.14009ms)
+2月 01 23:27:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10387566
+2月 01 23:27:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10387566 (took 1.125633ms)
+2月 01 23:32:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10387989
+2月 01 23:32:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10387989 (took 1.025878ms)
+2月 01 23:37:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10388414
+2月 01 23:37:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10388414 (took 1.133112ms)
+2月 01 23:42:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10388837
+2月 01 23:42:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10388837 (took 1.307508ms)
+2月 01 23:47:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10389260
+2月 01 23:47:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10389260 (took 1.145852ms)
+2月 01 23:52:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10389685
+2月 01 23:52:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10389685 (took 1.190191ms)
+2月 01 23:57:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10390108
+2月 01 23:57:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10390108 (took 1.118438ms)
+2月 02 00:02:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10390530
+2月 02 00:02:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10390530 (took 1.040471ms)
+2月 02 00:07:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10390955
+2月 02 00:07:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10390955 (took 1.116592ms)
+2月 02 00:11:24 ubuntu1604_k8s_node1 etcd[1795]: start to snapshot (applied: 22300293, lastsnap: 22200292)
+2月 02 00:11:24 ubuntu1604_k8s_node1 etcd[1795]: saved snapshot at index 22300293
+2月 02 00:11:24 ubuntu1604_k8s_node1 etcd[1795]: compacted raft log at 22295293
+2月 02 00:11:50 ubuntu1604_k8s_node1 etcd[1795]: purged file /var/lib/etcd/member/snap/000000000000d5e4-00000000014ca55e.snap successfully
+2月 02 00:12:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10391378
+2月 02 00:12:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10391378 (took 1.589894ms)
+2月 02 00:17:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10391803
+2月 02 00:17:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10391803 (took 1.084432ms)
+2月 02 00:22:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10392226
+2月 02 00:22:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10392226 (took 1.210615ms)
+2月 02 00:27:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10392651
+2月 02 00:27:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10392651 (took 1.13759ms)
+2月 02 00:32:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10393074
+2月 02 00:32:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10393074 (took 1.165729ms)
+2月 02 00:37:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10393497
+2月 02 00:37:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10393497 (took 1.497374ms)
+2月 02 00:42:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10393922
+2月 02 00:42:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10393922 (took 1.04105ms)
+2月 02 00:43:26 ubuntu1604_k8s_node1 etcd[1795]: apply entries took too long [117.656852ms for 1 entries]
+2月 02 00:43:26 ubuntu1604_k8s_node1 etcd[1795]: avoid queries with large range/delete range!
+2月 02 00:43:32 ubuntu1604_k8s_node1 etcd[1795]: apply entries took too long [115.296746ms for 1 entries]
+2月 02 00:43:32 ubuntu1604_k8s_node1 etcd[1795]: avoid queries with large range/delete range!
+2月 02 00:47:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10394343
+2月 02 00:47:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10394343 (took 33.777205ms)
+2月 02 00:49:16 ubuntu1604_k8s_node1 etcd[1795]: segmented wal file /var/lib/etcd/member/wal/00000000000000eb-00000000015465fc.wal is created
+2月 02 00:49:20 ubuntu1604_k8s_node1 etcd[1795]: purged file /var/lib/etcd/member/wal/00000000000000e6-000000000148cb53.wal successfully
+2月 02 00:52:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10394766
+2月 02 00:52:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10394766 (took 4.560625ms)
+2月 02 00:57:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10395188
+2月 02 00:57:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10395188 (took 1.072726ms)
+2月 02 01:02:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10395611
+2月 02 01:02:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10395611 (took 1.377996ms)
+2月 02 01:07:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10396036
+2月 02 01:07:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10396036 (took 1.05417ms)
+2月 02 01:12:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10396459
+2月 02 01:12:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10396459 (took 975.643µs)
+2月 02 01:17:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10396882
+2月 02 01:17:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10396882 (took 2.129754ms)
+2月 02 01:22:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10397307
+2月 02 01:22:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10397307 (took 1.194421ms)
+2月 02 01:27:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10397730
+2月 02 01:27:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10397730 (took 1.738823ms)
+2月 02 01:32:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10398155
+2月 02 01:32:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10398155 (took 1.070794ms)
+2月 02 01:37:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10398578
+2月 02 01:37:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10398578 (took 1.44639ms)
+2月 02 01:42:52 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10399001
+2月 02 01:42:52 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10399001 (took 997.094µs)
+2月 02 01:47:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10399426
+2月 02 01:47:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10399426 (took 1.58765ms)
+2月 02 01:52:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10399849
+2月 02 01:52:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10399849 (took 1.356763ms)
+2月 02 01:57:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10400274
+2月 02 01:57:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10400274 (took 1.126311ms)
+2月 02 02:02:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10400697
+2月 02 02:02:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10400697 (took 1.050657ms)
+2月 02 02:07:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10401120
+2月 02 02:07:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10401120 (took 1.056215ms)
+2月 02 02:12:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10401545
+2月 02 02:12:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10401545 (took 1.119769ms)
+2月 02 02:17:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10401967
+2月 02 02:17:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10401967 (took 938.358µs)
+2月 02 02:22:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10402392
+2月 02 02:22:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10402392 (took 1.025731ms)
+2月 02 02:27:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10402815
+2月 02 02:27:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10402815 (took 1.072616ms)
+2月 02 02:32:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10403238
+2月 02 02:32:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10403238 (took 968.571µs)
+2月 02 02:37:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10403663
+2月 02 02:37:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10403663 (took 1.105818ms)
+2月 02 02:42:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10404086
+2月 02 02:42:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10404086 (took 1.294377ms)
+2月 02 02:47:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10404511
+2月 02 02:47:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10404511 (took 1.00079ms)
+2月 02 02:52:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10404934
+2月 02 02:52:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10404934 (took 1.697119ms)
+2月 02 02:57:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10405355
+2月 02 02:57:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10405355 (took 1.086922ms)
+2月 02 03:02:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10405780
+2月 02 03:02:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10405780 (took 1.007079ms)
+2月 02 03:07:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10406203
+2月 02 03:07:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10406203 (took 1.163232ms)
+2月 02 03:12:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10406626
+2月 02 03:12:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10406626 (took 1.025413ms)
+2月 02 03:17:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10407050
+2月 02 03:17:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10407050 (took 1.388051ms)
+2月 02 03:22:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10407473
+2月 02 03:22:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10407473 (took 1.25376ms)
+2月 02 03:27:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10407898
+2月 02 03:27:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10407898 (took 1.02381ms)
+2月 02 03:32:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10408321
+2月 02 03:32:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10408321 (took 1.744967ms)
+2月 02 03:37:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10408744
+2月 02 03:37:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10408744 (took 1.565218ms)
+2月 02 03:42:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10409169
+2月 02 03:42:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10409169 (took 1.057935ms)
+2月 02 03:47:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10409592
+2月 02 03:47:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10409592 (took 1.320594ms)
+2月 02 03:52:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10410015
+2月 02 03:52:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10410015 (took 1.022573ms)
+2月 02 03:57:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10410527
+2月 02 03:57:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10410527 (took 25.679386ms)
+2月 02 04:02:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10411213
+2月 02 04:02:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10411213 (took 4.33675ms)
+2月 02 04:07:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10411638
+2月 02 04:07:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10411638 (took 1.254731ms)
+2月 02 04:12:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10412061
+2月 02 04:12:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10412061 (took 1.058006ms)
+2月 02 04:17:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10412484
+2月 02 04:17:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10412484 (took 1.438702ms)
+2月 02 04:22:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10412909
+2月 02 04:22:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10412909 (took 1.099061ms)
+2月 02 04:27:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10413332
+2月 02 04:27:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10413332 (took 1.719311ms)
+2月 02 04:32:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10413757
+2月 02 04:32:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10413757 (took 1.074374ms)
+2月 02 04:37:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10414179
+2月 02 04:37:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10414179 (took 1.360139ms)
+2月 02 04:42:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10414602
+2月 02 04:42:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10414602 (took 1.44502ms)
+2月 02 04:47:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10415027
+2月 02 04:47:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10415027 (took 1.012943ms)
+2月 02 04:52:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10415449
+2月 02 04:52:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10415449 (took 1.304876ms)
+2月 02 04:57:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10415911
+2月 02 04:57:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10415911 (took 1.44483ms)
+2月 02 05:02:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10416400
+2月 02 05:02:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10416400 (took 1.673093ms)
+2月 02 05:07:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10416823
+2月 02 05:07:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10416823 (took 1.464037ms)
+2月 02 05:12:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10417248
+2月 02 05:12:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10417248 (took 1.329741ms)
+2月 02 05:17:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10417671
+2月 02 05:17:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10417671 (took 1.165377ms)
+2月 02 05:22:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10418096
+2月 02 05:22:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10418096 (took 929.319µs)
+2月 02 05:27:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10418519
+2月 02 05:27:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10418519 (took 1.089016ms)
+2月 02 05:32:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10418942
+2月 02 05:32:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10418942 (took 1.163176ms)
+2月 02 05:37:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10419367
+2月 02 05:37:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10419367 (took 1.065555ms)
+2月 02 05:42:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10419790
+2月 02 05:42:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10419790 (took 1.021135ms)
+2月 02 05:47:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10420215
+2月 02 05:47:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10420215 (took 1.143088ms)
+2月 02 05:52:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10420637
+2月 02 05:52:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10420637 (took 1.134265ms)
+2月 02 05:57:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10421060
+2月 02 05:57:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10421060 (took 1.039287ms)
+2月 02 06:02:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10421485
+2月 02 06:02:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10421485 (took 1.43936ms)
+2月 02 06:07:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10421908
+2月 02 06:07:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10421908 (took 1.201028ms)
+2月 02 06:12:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10422333
+2月 02 06:12:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10422333 (took 1.293338ms)
+2月 02 06:17:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10422756
+2月 02 06:17:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10422756 (took 1.361375ms)
+2月 02 06:22:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10423179
+2月 02 06:22:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10423179 (took 29.984687ms)
+2月 02 06:27:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10423604
+2月 02 06:27:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10423604 (took 5.98051ms)
+2月 02 06:32:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10424027
+2月 02 06:32:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10424027 (took 1.435967ms)
+2月 02 06:37:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10424452
+2月 02 06:37:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10424452 (took 1.178999ms)
+2月 02 06:42:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10424875
+2月 02 06:42:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10424875 (took 1.013092ms)
+2月 02 06:47:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10425297
+2月 02 06:47:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10425297 (took 1.109921ms)
+2月 02 06:52:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10425722
+2月 02 06:52:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10425722 (took 1.014447ms)
+2月 02 06:57:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10426145
+2月 02 06:57:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10426145 (took 1.373989ms)
+2月 02 07:02:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10426570
+2月 02 07:02:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10426570 (took 1.3918ms)
+2月 02 07:07:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10426991
+2月 02 07:07:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10426991 (took 930.712µs)
+2月 02 07:12:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10427414
+2月 02 07:12:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10427414 (took 1.085243ms)
+2月 02 07:17:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10427839
+2月 02 07:17:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10427839 (took 1.285238ms)
+2月 02 07:22:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10428262
+2月 02 07:22:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10428262 (took 1.127504ms)
+2月 02 07:27:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10428687
+2月 02 07:27:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10428687 (took 1.166549ms)
+2月 02 07:32:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10429110
+2月 02 07:32:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10429110 (took 1.248646ms)
+2月 02 07:37:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10429533
+2月 02 07:37:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10429533 (took 3.469589ms)
+2月 02 07:42:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10429958
+2月 02 07:42:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10429958 (took 1.115434ms)
+2月 02 07:45:27 ubuntu1604_k8s_node1 etcd[1795]: segmented wal file /var/lib/etcd/member/wal/00000000000000ec-000000000155bc7d.wal is created
+2月 02 07:45:50 ubuntu1604_k8s_node1 etcd[1795]: purged file /var/lib/etcd/member/wal/00000000000000e7-00000000014c1600.wal successfully
+2月 02 07:47:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10430381
+2月 02 07:47:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10430381 (took 1.357341ms)
+2月 02 07:52:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10430804
+2月 02 07:52:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10430804 (took 1.146488ms)
+2月 02 07:57:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10431229
+2月 02 07:57:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10431229 (took 1.297618ms)
+2月 02 08:02:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10431652
+2月 02 08:02:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10431652 (took 1.038272ms)
+2月 02 08:06:07 ubuntu1604_k8s_node1 etcd[1795]: start to snapshot (applied: 22400294, lastsnap: 22300293)
+2月 02 08:06:07 ubuntu1604_k8s_node1 etcd[1795]: saved snapshot at index 22400294
+2月 02 08:06:07 ubuntu1604_k8s_node1 etcd[1795]: compacted raft log at 22395294
+2月 02 08:06:20 ubuntu1604_k8s_node1 etcd[1795]: purged file /var/lib/etcd/member/snap/000000000000d5e4-00000000014e2c00.snap successfully
+2月 02 08:07:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10432077
+2月 02 08:07:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10432077 (took 1.326502ms)
+2月 02 08:12:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10432500
+2月 02 08:12:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10432500 (took 1.098048ms)
+2月 02 08:17:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10432923
+2月 02 08:17:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10432923 (took 1.316372ms)
+2月 02 08:22:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10433348
+2月 02 08:22:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10433348 (took 1.123345ms)
+2月 02 08:27:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10433770
+2月 02 08:27:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10433770 (took 1.10179ms)
+2月 02 08:32:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10434195
+2月 02 08:32:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10434195 (took 1.566146ms)
+2月 02 08:37:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10434618
+2月 02 08:37:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10434618 (took 931.378µs)
+2月 02 08:42:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10435043
+2月 02 08:42:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10435043 (took 21.195395ms)
+2月 02 08:47:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10435498
+2月 02 08:47:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10435498 (took 6.334801ms)
+2月 02 08:52:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10435920
+2月 02 08:52:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10435920 (took 29.617261ms)
+2月 02 08:57:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10436343
+2月 02 08:57:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10436343 (took 37.378221ms)
+2月 02 09:02:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10436768
+2月 02 09:02:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10436768 (took 1.282891ms)
+2月 02 09:07:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10437190
+2月 02 09:07:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10437190 (took 1.015594ms)
+2月 02 09:12:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10437615
+2月 02 09:12:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10437615 (took 1.077536ms)
+2月 02 09:17:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10438038
+2月 02 09:17:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10438038 (took 1.123077ms)
+2月 02 09:22:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10438461
+2月 02 09:22:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10438461 (took 1.335678ms)
+2月 02 09:27:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10438885
+2月 02 09:27:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10438885 (took 1.212158ms)
+2月 02 09:32:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10439308
+2月 02 09:32:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10439308 (took 964.111µs)
+2月 02 09:37:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10439733
+2月 02 09:37:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10439733 (took 1.282148ms)
+2月 02 09:42:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10440156
+2月 02 09:42:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10440156 (took 1.239739ms)
+2月 02 09:47:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10440594
+2月 02 09:47:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10440594 (took 1.455768ms)
+2月 02 09:52:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10441017
+2月 02 09:52:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10441017 (took 1.043724ms)
+2月 02 09:57:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10441440
+2月 02 09:57:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10441440 (took 971.025µs)
+2月 02 10:02:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10441865
+2月 02 10:02:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10441865 (took 1.137969ms)
+2月 02 10:07:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10442328
+2月 02 10:07:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10442328 (took 1.733788ms)
+2月 02 10:12:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10442826
+2月 02 10:12:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10442826 (took 1.189031ms)
+2月 02 10:17:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10443308
+2月 02 10:17:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10443308 (took 1.197851ms)
+2月 02 10:22:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10443740
+2月 02 10:22:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10443740 (took 1.392691ms)
+2月 02 10:27:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10444271
+2月 02 10:27:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10444271 (took 1.828926ms)
+2月 02 10:32:53 ubuntu1604_k8s_node1 etcd[1795]: store.index: compact 10444663
+2月 02 10:32:53 ubuntu1604_k8s_node1 etcd[1795]: finished scheduled compaction at 10444663 (took 1.212983ms)

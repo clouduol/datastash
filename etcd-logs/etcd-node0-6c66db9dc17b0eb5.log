@@ -1,0 +1,249 @@
+-- Logs begin at Fri 2018-02-02 01:23:57 CST, end at Fri 2018-02-02 10:38:15 CST. --
+Feb 02 01:27:52 centos7_k8s_master etcd[1251]: store.index: compact 10397730
+Feb 02 01:27:52 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10397730 (took 1.001971ms)
+Feb 02 01:32:52 centos7_k8s_master etcd[1251]: store.index: compact 10398155
+Feb 02 01:32:52 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10398155 (took 983.443µs)
+Feb 02 01:37:52 centos7_k8s_master etcd[1251]: store.index: compact 10398578
+Feb 02 01:37:52 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10398578 (took 914.561µs)
+Feb 02 01:42:52 centos7_k8s_master etcd[1251]: store.index: compact 10399001
+Feb 02 01:42:52 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10399001 (took 976.402µs)
+Feb 02 01:47:53 centos7_k8s_master etcd[1251]: store.index: compact 10399426
+Feb 02 01:47:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10399426 (took 1.035482ms)
+Feb 02 01:48:43 centos7_k8s_master etcd[1251]: failed to send out heartbeat on time (exceeded the 100ms timeout for 496.058618ms)
+Feb 02 01:48:43 centos7_k8s_master etcd[1251]: server is likely overloaded
+Feb 02 01:48:43 centos7_k8s_master etcd[1251]: failed to send out heartbeat on time (exceeded the 100ms timeout for 496.193679ms)
+Feb 02 01:48:43 centos7_k8s_master etcd[1251]: server is likely overloaded
+Feb 02 01:52:53 centos7_k8s_master etcd[1251]: store.index: compact 10399849
+Feb 02 01:52:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10399849 (took 918.727µs)
+Feb 02 01:57:53 centos7_k8s_master etcd[1251]: store.index: compact 10400274
+Feb 02 01:57:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10400274 (took 939.419µs)
+Feb 02 02:02:53 centos7_k8s_master etcd[1251]: store.index: compact 10400697
+Feb 02 02:02:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10400697 (took 1.389487ms)
+Feb 02 02:07:53 centos7_k8s_master etcd[1251]: store.index: compact 10401120
+Feb 02 02:07:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10401120 (took 996.017µs)
+Feb 02 02:12:53 centos7_k8s_master etcd[1251]: store.index: compact 10401545
+Feb 02 02:12:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10401545 (took 967.203µs)
+Feb 02 02:17:53 centos7_k8s_master etcd[1251]: store.index: compact 10401967
+Feb 02 02:17:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10401967 (took 898.899µs)
+Feb 02 02:22:53 centos7_k8s_master etcd[1251]: store.index: compact 10402392
+Feb 02 02:22:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10402392 (took 939.824µs)
+Feb 02 02:27:53 centos7_k8s_master etcd[1251]: store.index: compact 10402815
+Feb 02 02:27:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10402815 (took 900.929µs)
+Feb 02 02:32:53 centos7_k8s_master etcd[1251]: store.index: compact 10403238
+Feb 02 02:32:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10403238 (took 961.257µs)
+Feb 02 02:37:53 centos7_k8s_master etcd[1251]: store.index: compact 10403663
+Feb 02 02:37:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10403663 (took 898.344µs)
+Feb 02 02:42:53 centos7_k8s_master etcd[1251]: store.index: compact 10404086
+Feb 02 02:42:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10404086 (took 896.05µs)
+Feb 02 02:47:53 centos7_k8s_master etcd[1251]: store.index: compact 10404511
+Feb 02 02:47:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10404511 (took 933.471µs)
+Feb 02 02:52:53 centos7_k8s_master etcd[1251]: store.index: compact 10404934
+Feb 02 02:52:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10404934 (took 957.082µs)
+Feb 02 02:57:53 centos7_k8s_master etcd[1251]: store.index: compact 10405355
+Feb 02 02:57:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10405355 (took 894.718µs)
+Feb 02 03:02:53 centos7_k8s_master etcd[1251]: store.index: compact 10405780
+Feb 02 03:02:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10405780 (took 957.056µs)
+Feb 02 03:07:53 centos7_k8s_master etcd[1251]: store.index: compact 10406203
+Feb 02 03:07:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10406203 (took 1.173237ms)
+Feb 02 03:12:53 centos7_k8s_master etcd[1251]: store.index: compact 10406626
+Feb 02 03:12:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10406626 (took 1.244211ms)
+Feb 02 03:17:53 centos7_k8s_master etcd[1251]: store.index: compact 10407050
+Feb 02 03:17:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10407050 (took 1.029962ms)
+Feb 02 03:21:18 centos7_k8s_master etcd[1251]: failed to send out heartbeat on time (exceeded the 100ms timeout for 176.862164ms)
+Feb 02 03:21:18 centos7_k8s_master etcd[1251]: server is likely overloaded
+Feb 02 03:21:18 centos7_k8s_master etcd[1251]: failed to send out heartbeat on time (exceeded the 100ms timeout for 176.935209ms)
+Feb 02 03:21:18 centos7_k8s_master etcd[1251]: server is likely overloaded
+Feb 02 03:22:53 centos7_k8s_master etcd[1251]: store.index: compact 10407473
+Feb 02 03:22:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10407473 (took 1.077316ms)
+Feb 02 03:27:53 centos7_k8s_master etcd[1251]: store.index: compact 10407898
+Feb 02 03:27:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10407898 (took 978.31µs)
+Feb 02 03:32:53 centos7_k8s_master etcd[1251]: store.index: compact 10408321
+Feb 02 03:32:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10408321 (took 1.012199ms)
+Feb 02 03:37:53 centos7_k8s_master etcd[1251]: store.index: compact 10408744
+Feb 02 03:37:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10408744 (took 990.048µs)
+Feb 02 03:42:53 centos7_k8s_master etcd[1251]: store.index: compact 10409169
+Feb 02 03:42:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10409169 (took 921.154µs)
+Feb 02 03:47:53 centos7_k8s_master etcd[1251]: store.index: compact 10409592
+Feb 02 03:47:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10409592 (took 1.328232ms)
+Feb 02 03:50:41 centos7_k8s_master etcd[1251]: failed to send out heartbeat on time (exceeded the 100ms timeout for 109.233832ms)
+Feb 02 03:50:41 centos7_k8s_master etcd[1251]: server is likely overloaded
+Feb 02 03:50:41 centos7_k8s_master etcd[1251]: failed to send out heartbeat on time (exceeded the 100ms timeout for 109.292066ms)
+Feb 02 03:50:41 centos7_k8s_master etcd[1251]: server is likely overloaded
+Feb 02 03:52:53 centos7_k8s_master etcd[1251]: store.index: compact 10410015
+Feb 02 03:52:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10410015 (took 956.082µs)
+Feb 02 03:57:53 centos7_k8s_master etcd[1251]: store.index: compact 10410527
+Feb 02 03:57:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10410527 (took 1.035328ms)
+Feb 02 04:02:53 centos7_k8s_master etcd[1251]: store.index: compact 10411213
+Feb 02 04:02:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10411213 (took 1.422531ms)
+Feb 02 04:07:53 centos7_k8s_master etcd[1251]: store.index: compact 10411638
+Feb 02 04:07:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10411638 (took 1.004508ms)
+Feb 02 04:12:53 centos7_k8s_master etcd[1251]: store.index: compact 10412061
+Feb 02 04:12:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10412061 (took 1.036674ms)
+Feb 02 04:17:53 centos7_k8s_master etcd[1251]: store.index: compact 10412484
+Feb 02 04:17:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10412484 (took 977.354µs)
+Feb 02 04:22:53 centos7_k8s_master etcd[1251]: store.index: compact 10412909
+Feb 02 04:22:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10412909 (took 1.017606ms)
+Feb 02 04:27:53 centos7_k8s_master etcd[1251]: store.index: compact 10413332
+Feb 02 04:27:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10413332 (took 1.092519ms)
+Feb 02 04:32:53 centos7_k8s_master etcd[1251]: store.index: compact 10413757
+Feb 02 04:32:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10413757 (took 920.602µs)
+Feb 02 04:37:53 centos7_k8s_master etcd[1251]: store.index: compact 10414179
+Feb 02 04:37:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10414179 (took 957.74µs)
+Feb 02 04:42:53 centos7_k8s_master etcd[1251]: store.index: compact 10414602
+Feb 02 04:42:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10414602 (took 922.173µs)
+Feb 02 04:47:53 centos7_k8s_master etcd[1251]: store.index: compact 10415027
+Feb 02 04:47:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10415027 (took 876.171µs)
+Feb 02 04:52:53 centos7_k8s_master etcd[1251]: store.index: compact 10415449
+Feb 02 04:52:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10415449 (took 945.653µs)
+Feb 02 04:57:53 centos7_k8s_master etcd[1251]: store.index: compact 10415911
+Feb 02 04:57:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10415911 (took 1.079072ms)
+Feb 02 05:02:53 centos7_k8s_master etcd[1251]: store.index: compact 10416400
+Feb 02 05:02:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10416400 (took 1.101528ms)
+Feb 02 05:07:53 centos7_k8s_master etcd[1251]: store.index: compact 10416823
+Feb 02 05:07:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10416823 (took 899.57µs)
+Feb 02 05:12:53 centos7_k8s_master etcd[1251]: store.index: compact 10417248
+Feb 02 05:12:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10417248 (took 876.569µs)
+Feb 02 05:17:53 centos7_k8s_master etcd[1251]: store.index: compact 10417671
+Feb 02 05:17:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10417671 (took 890.063µs)
+Feb 02 05:22:53 centos7_k8s_master etcd[1251]: store.index: compact 10418096
+Feb 02 05:22:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10418096 (took 931.219µs)
+Feb 02 05:27:53 centos7_k8s_master etcd[1251]: store.index: compact 10418519
+Feb 02 05:27:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10418519 (took 894.707µs)
+Feb 02 05:31:52 centos7_k8s_master etcd[1251]: failed to send out heartbeat on time (exceeded the 100ms timeout for 65.623089ms)
+Feb 02 05:31:52 centos7_k8s_master etcd[1251]: server is likely overloaded
+Feb 02 05:31:52 centos7_k8s_master etcd[1251]: failed to send out heartbeat on time (exceeded the 100ms timeout for 65.704859ms)
+Feb 02 05:31:52 centos7_k8s_master etcd[1251]: server is likely overloaded
+Feb 02 05:32:53 centos7_k8s_master etcd[1251]: store.index: compact 10418942
+Feb 02 05:32:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10418942 (took 1.035637ms)
+Feb 02 05:37:53 centos7_k8s_master etcd[1251]: store.index: compact 10419367
+Feb 02 05:37:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10419367 (took 957.575µs)
+Feb 02 05:42:53 centos7_k8s_master etcd[1251]: store.index: compact 10419790
+Feb 02 05:42:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10419790 (took 1.132436ms)
+Feb 02 05:47:53 centos7_k8s_master etcd[1251]: store.index: compact 10420215
+Feb 02 05:47:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10420215 (took 910.969µs)
+Feb 02 05:52:53 centos7_k8s_master etcd[1251]: store.index: compact 10420637
+Feb 02 05:52:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10420637 (took 943.144µs)
+Feb 02 05:57:53 centos7_k8s_master etcd[1251]: store.index: compact 10421060
+Feb 02 05:57:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10421060 (took 965.265µs)
+Feb 02 06:02:53 centos7_k8s_master etcd[1251]: store.index: compact 10421485
+Feb 02 06:02:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10421485 (took 878.394µs)
+Feb 02 06:07:53 centos7_k8s_master etcd[1251]: store.index: compact 10421908
+Feb 02 06:07:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10421908 (took 874.918µs)
+Feb 02 06:12:53 centos7_k8s_master etcd[1251]: store.index: compact 10422333
+Feb 02 06:12:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10422333 (took 919.152µs)
+Feb 02 06:17:53 centos7_k8s_master etcd[1251]: store.index: compact 10422756
+Feb 02 06:17:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10422756 (took 963.231µs)
+Feb 02 06:22:53 centos7_k8s_master etcd[1251]: store.index: compact 10423179
+Feb 02 06:22:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10423179 (took 1.449458ms)
+Feb 02 06:27:53 centos7_k8s_master etcd[1251]: store.index: compact 10423604
+Feb 02 06:27:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10423604 (took 922.621µs)
+Feb 02 06:32:53 centos7_k8s_master etcd[1251]: store.index: compact 10424027
+Feb 02 06:32:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10424027 (took 944.695µs)
+Feb 02 06:37:53 centos7_k8s_master etcd[1251]: store.index: compact 10424452
+Feb 02 06:37:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10424452 (took 923.981µs)
+Feb 02 06:42:53 centos7_k8s_master etcd[1251]: store.index: compact 10424875
+Feb 02 06:42:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10424875 (took 884.846µs)
+Feb 02 06:47:53 centos7_k8s_master etcd[1251]: store.index: compact 10425297
+Feb 02 06:47:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10425297 (took 885.262µs)
+Feb 02 06:52:53 centos7_k8s_master etcd[1251]: store.index: compact 10425722
+Feb 02 06:52:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10425722 (took 1.194389ms)
+Feb 02 06:57:53 centos7_k8s_master etcd[1251]: store.index: compact 10426145
+Feb 02 06:57:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10426145 (took 1.34512ms)
+Feb 02 07:02:53 centos7_k8s_master etcd[1251]: store.index: compact 10426570
+Feb 02 07:02:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10426570 (took 1.029142ms)
+Feb 02 07:07:53 centos7_k8s_master etcd[1251]: store.index: compact 10426991
+Feb 02 07:07:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10426991 (took 1.240794ms)
+Feb 02 07:12:53 centos7_k8s_master etcd[1251]: store.index: compact 10427414
+Feb 02 07:12:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10427414 (took 909.432µs)
+Feb 02 07:17:53 centos7_k8s_master etcd[1251]: store.index: compact 10427839
+Feb 02 07:17:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10427839 (took 1.223013ms)
+Feb 02 07:22:53 centos7_k8s_master etcd[1251]: store.index: compact 10428262
+Feb 02 07:22:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10428262 (took 931.908µs)
+Feb 02 07:27:53 centos7_k8s_master etcd[1251]: store.index: compact 10428687
+Feb 02 07:27:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10428687 (took 879.232µs)
+Feb 02 07:32:53 centos7_k8s_master etcd[1251]: store.index: compact 10429110
+Feb 02 07:32:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10429110 (took 1.046532ms)
+Feb 02 07:34:36 centos7_k8s_master etcd[1251]: segmented wal file /var/lib/etcd/member/wal/00000000000000ec-000000000155b3c1.wal is created
+Feb 02 07:34:38 centos7_k8s_master etcd[1251]: purged file /var/lib/etcd/member/wal/00000000000000e7-00000000014be226.wal successfully
+Feb 02 07:37:53 centos7_k8s_master etcd[1251]: store.index: compact 10429533
+Feb 02 07:37:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10429533 (took 960.977µs)
+Feb 02 07:39:23 centos7_k8s_master etcd[1251]: failed to send out heartbeat on time (exceeded the 100ms timeout for 268.555981ms)
+Feb 02 07:39:23 centos7_k8s_master etcd[1251]: server is likely overloaded
+Feb 02 07:39:23 centos7_k8s_master etcd[1251]: failed to send out heartbeat on time (exceeded the 100ms timeout for 268.668315ms)
+Feb 02 07:39:23 centos7_k8s_master etcd[1251]: server is likely overloaded
+Feb 02 07:42:53 centos7_k8s_master etcd[1251]: store.index: compact 10429958
+Feb 02 07:42:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10429958 (took 1.138602ms)
+Feb 02 07:47:53 centos7_k8s_master etcd[1251]: store.index: compact 10430381
+Feb 02 07:47:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10430381 (took 956.27µs)
+Feb 02 07:52:53 centos7_k8s_master etcd[1251]: store.index: compact 10430804
+Feb 02 07:52:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10430804 (took 902.865µs)
+Feb 02 07:57:53 centos7_k8s_master etcd[1251]: store.index: compact 10431229
+Feb 02 07:57:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10431229 (took 950.775µs)
+Feb 02 08:02:53 centos7_k8s_master etcd[1251]: store.index: compact 10431652
+Feb 02 08:02:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10431652 (took 989.301µs)
+Feb 02 08:06:06 centos7_k8s_master etcd[1251]: start to snapshot (applied: 22400291, lastsnap: 22300290)
+Feb 02 08:06:06 centos7_k8s_master etcd[1251]: saved snapshot at index 22400291
+Feb 02 08:06:06 centos7_k8s_master etcd[1251]: compacted raft log at 22395291
+Feb 02 08:06:08 centos7_k8s_master etcd[1251]: purged file /var/lib/etcd/member/snap/000000000000d5e4-00000000014e2bfe.snap successfully
+Feb 02 08:07:53 centos7_k8s_master etcd[1251]: store.index: compact 10432077
+Feb 02 08:07:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10432077 (took 937.632µs)
+Feb 02 08:12:53 centos7_k8s_master etcd[1251]: store.index: compact 10432500
+Feb 02 08:12:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10432500 (took 905.247µs)
+Feb 02 08:17:53 centos7_k8s_master etcd[1251]: store.index: compact 10432923
+Feb 02 08:17:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10432923 (took 1.002719ms)
+Feb 02 08:22:53 centos7_k8s_master etcd[1251]: store.index: compact 10433348
+Feb 02 08:22:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10433348 (took 1.03135ms)
+Feb 02 08:27:53 centos7_k8s_master etcd[1251]: store.index: compact 10433770
+Feb 02 08:27:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10433770 (took 903.994µs)
+Feb 02 08:32:53 centos7_k8s_master etcd[1251]: store.index: compact 10434195
+Feb 02 08:32:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10434195 (took 1.559209ms)
+Feb 02 08:37:53 centos7_k8s_master etcd[1251]: store.index: compact 10434618
+Feb 02 08:37:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10434618 (took 1.049579ms)
+Feb 02 08:42:53 centos7_k8s_master etcd[1251]: store.index: compact 10435043
+Feb 02 08:42:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10435043 (took 966.748µs)
+Feb 02 08:47:53 centos7_k8s_master etcd[1251]: store.index: compact 10435498
+Feb 02 08:47:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10435498 (took 870.535µs)
+Feb 02 08:52:53 centos7_k8s_master etcd[1251]: store.index: compact 10435920
+Feb 02 08:52:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10435920 (took 1.124672ms)
+Feb 02 08:57:53 centos7_k8s_master etcd[1251]: store.index: compact 10436343
+Feb 02 08:57:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10436343 (took 959.051µs)
+Feb 02 09:02:53 centos7_k8s_master etcd[1251]: store.index: compact 10436768
+Feb 02 09:02:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10436768 (took 964.457µs)
+Feb 02 09:07:53 centos7_k8s_master etcd[1251]: store.index: compact 10437190
+Feb 02 09:07:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10437190 (took 1.334634ms)
+Feb 02 09:12:53 centos7_k8s_master etcd[1251]: store.index: compact 10437615
+Feb 02 09:12:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10437615 (took 936.394µs)
+Feb 02 09:17:53 centos7_k8s_master etcd[1251]: store.index: compact 10438038
+Feb 02 09:17:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10438038 (took 922.819µs)
+Feb 02 09:22:53 centos7_k8s_master etcd[1251]: store.index: compact 10438461
+Feb 02 09:22:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10438461 (took 1.065466ms)
+Feb 02 09:27:53 centos7_k8s_master etcd[1251]: store.index: compact 10438885
+Feb 02 09:27:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10438885 (took 880.428µs)
+Feb 02 09:32:53 centos7_k8s_master etcd[1251]: store.index: compact 10439308
+Feb 02 09:32:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10439308 (took 953.053µs)
+Feb 02 09:37:53 centos7_k8s_master etcd[1251]: store.index: compact 10439733
+Feb 02 09:37:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10439733 (took 935.996µs)
+Feb 02 09:42:53 centos7_k8s_master etcd[1251]: store.index: compact 10440156
+Feb 02 09:42:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10440156 (took 955.757µs)
+Feb 02 09:47:53 centos7_k8s_master etcd[1251]: store.index: compact 10440594
+Feb 02 09:47:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10440594 (took 957.546µs)
+Feb 02 09:52:53 centos7_k8s_master etcd[1251]: store.index: compact 10441017
+Feb 02 09:52:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10441017 (took 1.078316ms)
+Feb 02 09:57:53 centos7_k8s_master etcd[1251]: store.index: compact 10441440
+Feb 02 09:57:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10441440 (took 884.756µs)
+Feb 02 10:02:53 centos7_k8s_master etcd[1251]: store.index: compact 10441865
+Feb 02 10:02:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10441865 (took 1.04234ms)
+Feb 02 10:07:53 centos7_k8s_master etcd[1251]: store.index: compact 10442328
+Feb 02 10:07:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10442328 (took 1.548975ms)
+Feb 02 10:12:53 centos7_k8s_master etcd[1251]: store.index: compact 10442826
+Feb 02 10:12:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10442826 (took 1.057341ms)
+Feb 02 10:17:53 centos7_k8s_master etcd[1251]: store.index: compact 10443308
+Feb 02 10:17:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10443308 (took 1.077466ms)
+Feb 02 10:22:53 centos7_k8s_master etcd[1251]: store.index: compact 10443740
+Feb 02 10:22:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10443740 (took 971.775µs)
+Feb 02 10:27:53 centos7_k8s_master etcd[1251]: store.index: compact 10444271
+Feb 02 10:27:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10444271 (took 1.435354ms)
+Feb 02 10:32:53 centos7_k8s_master etcd[1251]: store.index: compact 10444663
+Feb 02 10:32:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10444663 (took 890.195µs)
+Feb 02 10:37:53 centos7_k8s_master etcd[1251]: store.index: compact 10445057
+Feb 02 10:37:53 centos7_k8s_master etcd[1251]: finished scheduled compaction at 10445057 (took 948.893µs)
